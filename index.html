@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta name="robots" content="noindex, nofollow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Medicina &amp; Estética Distribuidora</title>
+    <meta name="description" content="Distribuidora de productos de medicina estética - Impulsando la próxima generación de tratamientos con tecnología innovadora y confiable.">
+    <meta name="theme-color" content="#95CFC6">
+
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        /* ============================================
+           MEDICINA & ESTETICA DISTRIBUIDORA
+           ============================================ */
+        :root {
+            --color-primary: #95CFC6;
+            --color-primary-light: #B8E0D8;
+            --color-dark: #1a1a1a;
+            --color-gray: #666666;
+            --color-light-gray: #f5f5f5;
+            --color-white: #ffffff;
+            --font-body: 'Montserrat', 'Segoe UI', Helvetica, Arial, sans-serif;
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--color-dark);
+            line-height: 1.6;
+            background: #ffffff;
+            overflow-x: hidden;
+            max-width: 100%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* ---- Grilla equivalente a Bootstrap 5 ---- */
+        .container {
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            padding-right: 12px;
+            padding-left: 12px;
+        }
+
+        @media (min-width: 576px) {
+            .container { max-width: 540px; }
+        }
+
+        @media (min-width: 768px) {
+            .container { max-width: 720px; }
+        }
+
+        @media (min-width: 992px) {
+            .container { max-width: 960px; }
+        }
+
+        @media (min-width: 1200px) {
+            .container { max-width: 1140px; }
+        }
+
+        @media (min-width: 1400px) {
+            .container { max-width: 1320px; }
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -12px;
+            margin-left: -12px;
+        }
+
+        .row > * {
+            width: 100%;
+            padding-right: 12px;
+            padding-left: 12px;
+        }
+
+        .row-g5 {
+            margin-right: -24px;
+            margin-left: -24px;
+            margin-top: -48px;
+        }
+
+        .row-g5 > * {
+            padding-right: 24px;
+            padding-left: 24px;
+            margin-top: 48px;
+        }
+
+        .align-center { align-items: center; }
+        .justify-center { justify-content: center; }
+
+        /* ============================================
+           NAVBAR
+           ============================================ */
+        #mainNav {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            padding: 0.81rem 0;
+            background: transparent;
+            transition: var(--transition-smooth);
+            z-index: 1000;
+        }
+
+        #mainNav > .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar-brand {
+            display: inline-block;
+            padding-top: 0.3125rem;
+            padding-bottom: 0.3125rem;
+            margin-right: 1rem;
+        }
+
+        .navbar-logo {
+            height: 72px;
+            width: auto;
+            display: block;
+        }
+
+        .navbar-collapse {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-nav {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            margin-left: auto;
+            gap: 1.8rem;
+        }
+
+        .nav-link {
+            display: block;
+            font-family: var(--font-body);
+            font-size: 0.756rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            color: var(--color-dark);
+            padding: 0.5rem 0;
+            line-height: 1.6;
+            position: relative;
+            white-space: nowrap;
+            transition: var(--transition-smooth);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color-primary);
+            transition: var(--transition-smooth);
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .nav-link.active {
+            color: var(--color-primary);
+        }
+
+        /* Navbar Toggler (solo móvil) */
+        .navbar-toggler {
+            display: none;
+            border: none;
+            background: transparent;
+            padding: 0.504rem;
+            cursor: pointer;
+        }
+
+        .navbar-toggler-icon {
+            position: relative;
+            width: 27px;
+            height: 2px;
+            background: var(--color-dark);
+            display: block;
+            margin: 4px 0;
+            transition: var(--transition-smooth);
+        }
+
+        .navbar-toggler-icon::before,
+        .navbar-toggler-icon::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 27px;
+            height: 2px;
+            background: var(--color-dark);
+            transition: var(--transition-smooth);
+        }
+
+        .navbar-toggler-icon::before { top: -8px; }
+        .navbar-toggler-icon::after { top: 8px; }
+
+        /* ============================================
+           HERO SECTION
+           ============================================ */
+        .hero-section {
+            min-height: 60vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(to bottom, #ffffff 0%, #95CFC6 100%);
+            overflow: hidden;
+        }
+
+        .hero-section > .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .hero-curve {
+            position: absolute;
+            bottom: -76%;
+            left: -22%;
+            width: 66%;
+            height: 120%;
+            background: rgba(149, 207, 198, 0.15);
+            border-radius: 50%;
+            transform: rotate(120deg);
+            clip-path: inset(0 50% 0 0);
+        }
+
+        .hero-col {
+            width: 66.66666667%;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            padding-top: 80px;
+        }
+
+        .hero-title {
+            font-family: var(--font-body);
+            font-weight: 500;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-line {
+            display: block;
+            font-size: 2.8rem;
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 1.2;
+            color: var(--color-dark);
+        }
+
+        .hero-line-bold {
+            font-weight: 700;
+            margin-top: 0.2rem;
+        }
+
+        .hero-underline {
+            width: 200px;
+            height: 2px;
+            background: var(--color-dark);
+            margin-top: 2rem;
+        }
+
+        /* ============================================
+           INFO SECTION (Proposito / Mision / Vision / Portfolio)
+           ============================================ */
+        .info-section {
+            padding: 27px 0;
+            background: var(--color-white);
+        }
+
+        .info-grid-2x2 {
+            display: grid;
+            grid-template-columns: repeat(2, 390px);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 8px;
+            justify-content: center;
+        }
+
+        .info-card {
+            text-align: center;
+            height: 100%;
+            width: 100%;
+            max-width: 390px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .info-title {
+            font-family: var(--font-body);
+            font-size: 1.35rem;
+            font-weight: 500;
+            line-height: 1.2;
+            letter-spacing: 0.15em;
+            color: var(--color-primary);
+            text-transform: uppercase;
+            margin-bottom: 0.3rem;
+        }
+
+        .info-box {
+            background: var(--color-dark);
+            border-radius: 13px;
+            padding: 1.2rem 0.8rem;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+        }
+
+        .info-box p {
+            color: var(--color-white);
+            font-family: var(--font-body);
+            font-size: 0.8rem;
+            font-weight: 400;
+            line-height: 1.4;
+            margin: 0;
+        }
+
+        /* ============================================
+           PRODUCTS SECTION
+           ============================================ */
+        .products-section {
+            padding: 72px 0;
+            background: #dfdfdf;
+        }
+
+        .products-col-img { width: 58.33333333%; }
+        .products-col-txt { width: 41.66666667%; }
+
+        .products-image { position: relative; }
+
+        .products-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .products-content { text-align: left; }
+
+        .products-title {
+            font-family: var(--font-body);
+            font-size: 3.15rem;
+            font-weight: 800;
+            line-height: 1.1;
+            color: var(--color-dark);
+            margin-bottom: 1.8rem;
+            letter-spacing: 0.02em;
+        }
+
+        .btn-products {
+            display: inline-block;
+            background: var(--color-primary);
+            color: var(--color-white);
+            font-family: var(--font-body);
+            font-size: 0.86rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            line-height: 1.5;
+            text-transform: uppercase;
+            padding: 13px 32px;
+            border-radius: 27px;
+            text-decoration: none;
+            transition: var(--transition-smooth);
+            border: none;
+        }
+
+        .btn-products:hover {
+            background: var(--color-dark);
+            color: var(--color-white);
+            transform: translateY(-2px);
+        }
+
+        /* ============================================
+           MARCAS SECTION
+           ============================================ */
+        .marcas-section {
+            padding: 72px 0;
+            background: var(--color-white);
+            overflow: visible;
+        }
+
+        .marcas-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-right: -12px;
+            margin-left: -12px;
+            margin-top: -24px;
+        }
+
+        .marca-item {
+            width: 16.66666667%;
+            margin-top: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 18px;
+            overflow: visible;
+            transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .marca-item:hover { transform: translateY(-10px); }
+
+        .marca-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .marca-item img {
+            height: 72px;
+            width: 100%;
+            object-fit: contain;
+            display: block;
+            filter: brightness(0);
+            transition: filter 0.35s ease, transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .marca-item:hover img { transform: scale(1.15); }
+
+        /* ============================================
+           FOOTER SECTION
+           ============================================ */
+        .footer-section {
+            background: #f5f5f5;
+            padding: 60px 0 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 36px;
+        }
+
+        .footer-col-logo {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .footer-logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 24px;
+        }
+
+        .footer-logo-img {
+            height: 56px;
+            width: auto;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        .footer-redes {
+            margin-top: 10px;
+            padding-left: 11px;
+        }
+
+        .footer-redes-title {
+            font-family: var(--font-body);
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            color: var(--color-dark);
+            margin-bottom: 10px;
+        }
+
+        .footer-social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background: var(--color-primary);
+            border-radius: 50%;
+            color: var(--color-white);
+            transition: var(--transition-smooth);
+        }
+
+        .footer-social-link svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .footer-col-redes { display: none; }
+
+        .footer-col-nav {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .footer-nav-link {
+            font-family: var(--font-body);
+            font-size: 0.93rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            color: var(--color-dark);
+            text-decoration: none;
+            transition: var(--transition-smooth);
+            text-transform: uppercase;
+        }
+
+        .footer-nav-link:hover { color: var(--color-primary); }
+
+        .footer-col-contacto {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        .footer-contacto-title {
+            font-family: var(--font-body);
+            font-size: 0.93rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            color: var(--color-dark);
+            margin-bottom: 18px;
+            text-transform: uppercase;
+            text-align: left;
+        }
+
+        .footer-contacto-item {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 12px;
+        }
+
+        .footer-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 31px;
+            height: 31px;
+            background: var(--color-primary);
+            border-radius: 50%;
+            color: var(--color-white);
+            flex-shrink: 0;
+            margin-right: 11px;
+        }
+
+        .footer-icon svg {
+            width: 15px;
+            height: 15px;
+        }
+
+        .footer-contacto-text {
+            font-family: var(--font-body);
+            font-size: 0.93rem;
+            color: var(--color-dark);
+            min-width: 233px;
+            text-align: left;
+            line-height: 1;
+        }
+
+        .footer-copyright {
+            background: linear-gradient(to right, #ffffff 0%, #e0f4f1 50%, #95CFC6 100%);
+            padding: 16px 0;
+        }
+
+        .footer-copyright-text {
+            text-align: center;
+            font-family: var(--font-body);
+            font-size: 0.84rem;
+            color: var(--color-dark);
+            margin: 0;
+        }
+
+        /* ============================================
+           RESPONSIVE
+           ============================================ */
+        @media (max-width: 991px) {
+            .navbar-collapse { display: none; }
+            .navbar-toggler { display: block; }
+
+            .hero-col { width: 100%; }
+            .hero-line { font-size: 2rem; }
+
+            .hero-curve {
+                width: 55%;
+                height: 110%;
+                bottom: -70%;
+                left: -20%;
+            }
+
+            .products-col-img,
+            .products-col-txt { width: 100%; }
+
+            .products-content { text-align: center; }
+            .products-title { font-size: 2.25rem; }
+
+            .marca-item { width: 25%; }
+            .marca-item img { height: 72px; width: 162px; }
+
+            .footer-content {
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap: 20px 0;
+                padding-bottom: 24px;
+            }
+
+            .footer-col-logo {
+                flex: 0 0 100%;
+                max-width: 100%;
+                order: 1;
+                margin-bottom: 4px;
+            }
+
+            .footer-logo-container { margin-bottom: 0; }
+            .footer-col-logo .footer-redes { display: none; }
+
+            .footer-col-redes {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            .footer-col-nav {
+                order: 2;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+                flex: 1;
+                min-width: 110px;
+            }
+
+            .footer-col-contacto {
+                order: 3;
+                flex: 2;
+                min-width: 180px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .hero-line { font-size: 1.5rem; }
+
+            .hero-curve {
+                width: 80%;
+                height: 80%;
+                bottom: -50%;
+                left: -25%;
+            }
+
+            .hero-underline { width: 150px; }
+
+            .info-section { padding: 54px 0; }
+
+            /* Ojo: NO se toca grid-template-rows — el original conserva el
+               repeat(2, 1fr) de la regla base, y eso hace que las dos primeras
+               tarjetas queden con la misma altura también en móvil. */
+            .info-grid-2x2 {
+                grid-template-columns: 1fr;
+                gap: 18px;
+                max-width: 420px;
+                margin: 0 auto;
+            }
+
+            .info-title { font-size: 0.99rem; }
+
+            .info-box {
+                padding: 1.35rem;
+                border-radius: 18px;
+            }
+
+            .info-box p { font-size: 0.81rem; }
+
+            .marcas-section { padding: 45px 0; }
+            .marca-item { width: 33.33333333%; }
+            .marca-item img { height: 54px; width: 126px; }
+
+            .products-section { padding: 45px 0; }
+            .products-title { font-size: 1.8rem; }
+
+            .btn-products {
+                font-size: 0.76rem;
+                padding: 11px 25px;
+            }
+
+            .footer-col-redes {
+                order: 4;
+                flex: 1;
+                min-width: 100px;
+            }
+
+            .footer-contacto-text {
+                min-width: unset;
+                word-break: break-word;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .navbar-logo { height: 50px; }
+
+            .hero-section { padding: 0 1rem; }
+            .hero-curve { display: none; }
+            .hero-line { font-size: 1.3rem; }
+
+            .marca-item { width: 50%; }
+
+            .footer-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+
+            .footer-col-logo,
+            .footer-col-redes,
+            .footer-col-nav,
+            .footer-col-contacto {
+                flex: 0 0 100%;
+                max-width: 100%;
+                order: unset;
+            }
+
+            .footer-col-logo { order: 1; }
+            .footer-col-nav { order: 2; }
+            .footer-col-contacto { order: 3; }
+            .footer-col-redes { order: 4; }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="mainNav" aria-label="Navegación principal">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">
+                <img src="./assets/logo.svg" alt="Medicina &amp; Estética" class="navbar-logo" width="383" height="72">
+            </a>
+            <button class="navbar-toggler" type="button" aria-label="Abrir navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#inicio">INICIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#inicio">EVENTOS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#productos">PRODUCTOS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proposito">NOSOTROS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">CONTACTO</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-background">
+            <div class="hero-curve"></div>
+        </div>
+        <div class="container">
+            <div class="row align-center">
+                <div class="hero-col">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            <span class="hero-line">IMPULSANDO LA PRÓXIMA</span>
+                            <span class="hero-line hero-line-bold">GENERACIÓN DE TRATAMIENTOS</span>
+                        </h1>
+                        <div class="hero-underline"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Propósito / Misión / Visión / Portfolio -->
+    <section id="proposito" class="info-section">
+        <div class="container">
+            <div class="info-grid-2x2">
+                <div class="info-card">
+                    <h2 class="info-title">NUESTRO PROPÓSITO</h2>
+                    <div class="info-box">
+                        <p>Ser el aliado estratégico del médico estético,
+                            brindando tecnología, asesoramiento y&nbsp;soporte para que cada tratamiento
+                            se&nbsp;traduzca en&nbsp;resultados visibles y&nbsp;confianza duradera.</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h2 class="info-title">NUESTRA MISIÓN</h2>
+                    <div class="info-box">
+                        <p>Impulsar el desarrollo de&nbsp;la&nbsp;medicina
+                            estética en&nbsp;el&nbsp;país, ofreciendo productos innovadores y&nbsp;confiables, junto con
+                            un&nbsp;servicio personalizado que ayude a&nbsp;los profesionales a&nbsp;brindar
+                            tratamientos seguros y&nbsp;de&nbsp;excelencia.</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h2 class="info-title">NUESTRA VISIÓN</h2>
+                    <div class="info-box">
+                        <p>Ser la&nbsp;distribuidora referente en&nbsp;medicina
+                            y&nbsp;estética a&nbsp;nivel nacional, reconocida por la&nbsp;calidad de&nbsp;nuestros
+                            productos, la&nbsp;solidez de&nbsp;nuestras relaciones con los médicos y&nbsp;por liderar
+                            iniciativas de&nbsp;formación y&nbsp;actualización científica.</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h2 class="info-title">NUESTRO PORTFOLIO</h2>
+                    <div class="info-box">
+                        <p>Nuestros productos premiados se&nbsp;enfocan en&nbsp;ofrecer a&nbsp;los profesionales de&nbsp;la&nbsp;salud las innovaciones más avanzadas en&nbsp;productos y&nbsp;servicios dentro del&nbsp;campo de&nbsp;la&nbsp;medicina estética.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nuestros Productos -->
+    <section id="productos" class="products-section">
+        <div class="container">
+            <div class="row row-g5 align-center">
+                <div class="products-col-img">
+                    <div class="products-image">
+                        <img src="./assets/1.png" alt="Productos de Medicina Estética" width="778" height="504">
+                    </div>
+                </div>
+                <div class="products-col-txt">
+                    <div class="products-content">
+                        <h2 class="products-title">NUESTROS PRODUCTOS</h2>
+                        <a href="#marcas" class="btn-products">CONOCÉ MÁS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marcas -->
+    <section id="marcas" class="marcas-section">
+        <div class="container">
+            <div class="marcas-row">
+                <div class="marca-item"><span class="marca-link"><img src="./assets/logo-stylage.svg" alt="STYLAGE"></span></div>
+                <div class="marca-item"><span class="marca-link"><img src="./assets/logo-novuma.svg" alt="NOVUMA"></span></div>
+                <div class="marca-item"><span class="marca-link"><img src="./assets/logo-karisma.svg" alt="KARISMA"></span></div>
+                <div class="marca-item"><span class="marca-link"><img src="./assets/logo-vhacker.svg" alt="V HACKER"></span></div>
+                <div class="marca-item"><span class="marca-link"><img src="./assets/logo-exovslim.svg" alt="EXO V SLIM"></span></div>
+                <div class="marca-item"><span class="marca-link"><img src="./assets/logo-vtech.svg" alt="V TECH"></span></div>
+                <div class="marca-item"><span class="marca-link"><img src="./assets/logo-inbiotec.svg" alt="INBIOTEC"></span></div>
+                <div class="marca-item"><span class="marca-link"><img src="./assets/logo-inbiotec-amber.svg" alt="INBIOTEC AMBER"></span></div>
+                <div class="marca-item"><span class="marca-link"><img src="./assets/logo-aqulift.svg" alt="AQULIFT"></span></div>
+                <div class="marca-item"><span class="marca-link"><img src="./assets/logo-everline.svg" alt="EVERLINE"></span></div>
+                <div class="marca-item"><span class="marca-link"><img src="./assets/piel-sana.svg" alt="PIEL SANA"></span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col footer-col-logo">
+                    <div class="footer-logo-container">
+                        <img src="./assets/logo.svg" alt="Medicina &amp; Estética" class="footer-logo-img" width="298" height="56">
+                    </div>
+                    <div class="footer-redes">
+                        <p class="footer-redes-title">NUESTRAS REDES</p>
+                        <span class="footer-social-link" aria-label="Instagram de Medicina y Estética">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="footer-col footer-col-redes">
+                    <p class="footer-redes-title">NUESTRAS REDES</p>
+                    <span class="footer-social-link" aria-label="Instagram de Medicina y Estética">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </span>
+                </div>
+
+                <div class="footer-col footer-col-nav">
+                    <nav class="footer-nav" aria-label="Enlaces del pie de página">
+                        <a href="#inicio" class="footer-nav-link">INICIO</a>
+                        <a href="#productos" class="footer-nav-link">PRODUCTOS</a>
+                        <a href="#proposito" class="footer-nav-link">NOSOTROS</a>
+                    </nav>
+                </div>
+
+                <div class="footer-col footer-col-contacto">
+                    <p class="footer-contacto-title">CONTACTO</p>
+                    <div class="footer-contacto-item">
+                        <span class="footer-icon footer-icon-whatsapp" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"></path>
+                            </svg>
+                        </span>
+                        <span class="footer-contacto-text">+54 9 11 6119 4854</span>
+                    </div>
+                    <div class="footer-contacto-item">
+                        <span class="footer-icon footer-icon-email" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path>
+                            </svg>
+                        </span>
+                        <span class="footer-contacto-text">info@medicinaestetica.com.ar</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                <p class="footer-copyright-text">2026 Medicina y Estética - Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+  <div data-ijv-demo-badge style="position:relative;z-index:1;padding:14px 16px 90px;text-align:center;font:400 12px/1.5 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color:#94a3b8;background:#0f172a">
+    Demo preparada por <a href="https://ijvagency.com/" target="_blank" rel="noopener noreferrer" style="color:#cbd5e1;text-decoration:underline">IJV Agency</a> para Medicina y Estética — sitio de muestra, no es la web oficial.
+  </div>
+  <script>
+window["medicinaesteticaAgentConfig"] = Object.assign(window["medicinaesteticaAgentConfig"] || {}, { webhook: "https://meta.ijvagency.com/webhook/medicinaestetica-demo-agent", leadsWebhook: "https://meta.ijvagency.com/webhook/medicinaestetica-demo-leads" });
+/* ============================================================================
+ * MEDICINA Y ESTÉTICA — Widget de chat embebible (IJV Agency)
+ * ----------------------------------------------------------------------------
+ * Generado por IJV Factory — NO editar a mano: cambios van al factory.config.json
+ * y se regenera. Patrón canónico extraído de mmdent/widget/agent.js.
+ *
+ * Distribución recomendada vía jsDelivr (repo público):
+ *   https://cdn.jsdelivr.net/gh/nachojr2003/medicinaestetica-site@main/widget/agent.js
+ *
+ * Uso en el sitio del cliente:
+ *   <script>
+ *     window.medicinaesteticaAgentConfig = { }; // overrides opcionales — los defaults van embebidos
+ *   <\/script>
+ *   <script src=".../widget/agent.js" defer><\/script>
+ *
+ * Sin dependencias externas. IIFE puro, vanilla JS (ES5).
+ * ============================================================================ */
+(function () {
+  'use strict';
+
+  /* ---------------- Config con DEFAULTS embebidos (regla #11: si el
+   * integrador pasa config parcial, NADA queda undefined) ---------------- */
+  var DEFAULTS = {
+    n8nBase:        "https://meta.ijvagency.com",
+    webhook:        null,
+    leadsWebhook:   null,
+    privacyUrl:     '/politica-privacidad',
+    logoUrl:        "https://medicinaestetica-demo.vercel.app/assets/favicon.svg",
+    primary:        '#92CFCC',
+    secondary:      '#1D1D1B',
+    accent:         '#F5F5F5',
+    fontFamily:     "Inter,system-ui,-apple-system,'Segoe UI',sans-serif,'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji'",
+    timeoutMs:      45000,   /* >= 30s: queries con RAG completo cortan a 15s (regla #10).
+                              * 45000 y no 40000: la espera real que ve el usuario es
+                              * timeoutMs × (1 + maxRetries), así que el knob que importa
+                              * es maxRetries. Un turno vivo nunca llega a 40s (RAG p99
+                              * ~10s + self-call del retry-on-empty ~5s, regla #84): entre
+                              * 40 y 45 solo cambia cuánto tarda en rendirse lo ya muerto. */
+    maxRetries:     1,
+    typewriter:     true,
+    typewriterCps:  90,
+    agentName:      "el asistente virtual de Medicina & Estética",
+    clientName:     "Medicina y Estética",
+    /* Subtítulo del encabezado: dice a QUÉ ATIENDE el agente, nunca qué es. Una
+     * etiqueta de bot aquí lo delata antes de que escriba una palabra (regla
+     * #114). Se personaliza con `agente.subtitulo_widget` en el config. */
+    headerSubtitle: "Atención al cliente",
+
+
+    welcomeMessage: "¡Hola! Soy el asistente virtual de Medicina & Estética. Te ayudo a conocer nuestras 11 marcas de productos para tu práctica estética: rellenos, bioestimuladores, exosomas, mesoterapia, hilos tensores y más. Contame, ¿qué tratamiento ofrecés en tu consultorio o qué producto estás buscando?"
+  };
+  var CFG = window.medicinaesteticaAgentConfig = window.medicinaesteticaAgentConfig || {};
+  for (var k in DEFAULTS) { if (CFG[k] === undefined || CFG[k] === null) CFG[k] = DEFAULTS[k]; }
+  if (!CFG.webhook)      CFG.webhook      = CFG.n8nBase + '/webhook/medicinaestetica-agent';
+  if (!CFG.leadsWebhook) CFG.leadsWebhook = CFG.n8nBase + '/webhook/medicinaestetica-leads';
+
+  var QUICK_BUTTONS = [];
+
+  /* ---------------- Utilidades ---------------- */
+  function escapeHtml(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  }
+  function parseMd(text) {
+    var s = escapeHtml(text);
+    s = s.replace(/```([\s\S]*?)```/g, function (_, c) { return '<pre>' + c + '</pre>'; });
+    s = s.replace(/`([^`]+)`/g, '<code>$1</code>');
+    s = s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+    s = s.replace(/(^|[^*])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+    s = s.replace(/\[([^\]]+)\]\((https?:[^)]+)\)/g,
+      '<a href="$2" target="_blank" rel="noopener">$1</a>');
+    s = s.replace(/(^|\s)(https?:\/\/[^\s<]+)/g,
+      '$1<a href="$2" target="_blank" rel="noopener">$2</a>');
+    s = s.replace(/(^|\n)- (.+)/g, '$1<li>$2</li>');
+    s = s.replace(/(<li>[\s\S]*?<\/li>)(?!\s*<li>)/g, '<ul>$1</ul>');
+    /* Regla #27: strip de placeholders alucinados por el LLM.
+       Restringido a placeholders CONOCIDOS: un strip genérico \[[a-z_]+\]
+       borraba texto legítimo entre corchetes (ej. "[PDF]", "[borrador]"). */
+    s = s.replace(/\{\{[^}]+\}\}/g, '').replace(/\{first_name\}/gi, '')
+      .replace(/\[(nombre|name|first_name|usuario|user)\]/gi, '');
+    /* Segunda capa: MARCAS INTERNAS del sistema. El nodo Finalize del workflow ya
+       las strippea; esto es la red por si un turno las deja pasar — el usuario
+       jamás debe leer "[CONSENT_OK]" ni "[PENDIENTE CLIENTE: precio]".
+       Lista EXPLÍCITA a propósito: un \[[A-Z_]{3,}\] genérico borraría texto
+       legítimo del negocio ("[PDF]", "[IVA]", "[RUC]") — misma lección que el
+       strip de placeholders de arriba (regla #27). Marca nueva en un workflow
+       ⇒ agregarla también aquí. */
+    s = s.replace(/\[\/?(CONSENT_OK|CONSENT|HANDOFF|ESCALATED|ESCALAR|LEAD_OK|NO_KB|IMG:[^\]]*|PENDIENTE[^\]]*)\]/gi, '');
+    s = s.replace(/\n{2,}/g, '</p><p>').replace(/\n/g, '<br>');
+    return '<p>' + s + '</p>';
+  }
+  function uuid() {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+      var r = Math.random() * 16 | 0, v = c === 'x' ? r : (r & 0x3 | 0x8);
+      return v.toString(16);
+    });
+  }
+
+  /* Regla #61: TTL de inactividad — Cmd+Shift+R NO limpia sessionStorage; sin
+   * TTL la Simple Memory del agente arrastra la conversación vieja. */
+  var SESSION_TTL_MS = 30 * 60 * 1000;
+  var SS_PREFIX = 'medicinaestetica_';
+  function getSessionId() {
+    var s = sessionStorage.getItem(SS_PREFIX + 'session_id');
+    var last = parseInt(sessionStorage.getItem(SS_PREFIX + 'session_last') || '0', 10);
+    var now = Date.now();
+    if (!s || (last && (now - last) > SESSION_TTL_MS)) {
+      s = uuid();
+      sessionStorage.setItem(SS_PREFIX + 'session_id', s);
+      sessionStorage.removeItem(SS_PREFIX + 'messages');
+    }
+    sessionStorage.setItem(SS_PREFIX + 'session_last', String(now));
+    return s;
+  }
+  function resetSession() {
+    sessionStorage.removeItem(SS_PREFIX + 'session_id');
+    sessionStorage.removeItem(SS_PREFIX + 'session_last');
+    sessionStorage.removeItem(SS_PREFIX + 'messages');
+    return getSessionId();
+  }
+
+  /* Persistencia de mensajes: sobreviven al refresh, no al cerrar la pestaña */
+  function loadMessages() {
+    try { return JSON.parse(sessionStorage.getItem(SS_PREFIX + 'messages') || '[]'); }
+    catch (e) { return []; }
+  }
+  function saveMessage(role, text) {
+    try {
+      var m = loadMessages();
+      m.push({ role: role, text: text });
+      if (m.length > 60) m = m.slice(-60);
+      sessionStorage.setItem(SS_PREFIX + 'messages', JSON.stringify(m));
+    } catch (e) { /* quota: silencioso */ }
+  }
+
+  /* ---------------- CSS inyectado ----------------
+   * Regla #15: CSS defensivo para <img> (librerías emoji del sitio convierten
+   * unicode a <img>; sin esto un 👋 sale de 600px) + fuentes emoji en la pila. */
+  var CSS = [
+    /* --ijv-text es FIJO a proposito (regla de Nacho): las letras de los mensajes
+     * del agente van SIEMPRE en negro, nunca en un color de marca. El secundario
+     * queda solo para usos decorativos (gradiente del cal, toast). */
+    ':root{--ijv-primary:' + CFG.primary + ';--ijv-secondary:' + CFG.secondary + ';--ijv-accent:' + CFG.accent + ';--ijv-text:#111111;}',
+    '.ijv-launcher{position:fixed;bottom:22px;right:22px;height:60px;padding:0 22px;border-radius:30px;background:#fff;color:var(--ijv-primary);border:0;cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;z-index:2147483000;transition:transform .2s ease}',
+    '.ijv-launcher:hover{transform:scale(1.05)}',
+    '.ijv-launcher img{height:36px;width:auto;display:block;object-fit:contain}',
+    '.ijv-root *,.ijv-root *::before,.ijv-root *::after{box-sizing:border-box}',
+    '.ijv-root{position:fixed;bottom:100px;right:22px;width:380px;max-width:calc(100vw - 24px);height:600px;max-height:calc(100vh - 120px);background:#fff;border-radius:18px;box-shadow:0 20px 60px rgba(0,0,0,.25);display:flex;flex-direction:column;overflow:hidden;z-index:2147483000;font-family:' + CFG.fontFamily + ';color:var(--ijv-text);transform:translateY(20px);opacity:0;pointer-events:none;transition:transform .25s ease,opacity .2s ease}',
+    '.ijv-root.ijv-open{transform:translateY(0);opacity:1;pointer-events:auto}',
+    '.ijv-head{background:var(--ijv-primary);color:#fff;padding:14px 16px;display:flex;align-items:center;gap:12px}',
+    '.ijv-head img{height:44px;width:auto;background:#fff;border-radius:10px;padding:6px 10px;flex-shrink:0;display:block}',
+    '.ijv-head .ijv-title{font-weight:700;font-size:15px;line-height:1.2}',
+    '.ijv-head .ijv-sub{font-size:12px;opacity:.85}',
+    '.ijv-head .ijv-actions{margin-left:auto;display:flex;gap:6px}',
+    '.ijv-head button{background:rgba(255,255,255,.15);border:0;color:#fff;width:30px;height:30px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:15px}',
+    '.ijv-head button:hover{background:rgba(255,255,255,.28)}',
+    '.ijv-msgs{flex:1;overflow-y:auto;padding:16px;background:#FAFAFA;display:flex;flex-direction:column;gap:10px;scroll-behavior:smooth}',
+    '.ijv-msg{max-width:84%;padding:10px 13px;border-radius:14px;font-size:14px;line-height:1.45;word-wrap:break-word}',
+    '.ijv-msg p{margin:0 0 6px}.ijv-msg p:last-child{margin:0}',
+    '.ijv-msg ul{margin:4px 0 4px 18px;padding:0}.ijv-msg li{margin:2px 0}',
+    '.ijv-msg a{color:var(--ijv-primary);text-decoration:underline}',
+    '.ijv-msg code{background:rgba(0,0,0,.08);padding:1px 5px;border-radius:4px;font-size:13px}',
+    '.ijv-msg img{max-width:1.2em!important;max-height:1.2em!important;display:inline-block!important;vertical-align:text-bottom!important}',
+    '.ijv-bot{align-self:flex-start;background:#fff;border:1px solid #E8E8E8;border-top-left-radius:4px;color:var(--ijv-text)}',
+    '.ijv-user{align-self:flex-end;background:var(--ijv-primary);color:#fff;border-top-right-radius:4px}',
+    '.ijv-user a{color:#fff}',
+    '.ijv-typing{align-self:flex-start;display:flex;gap:4px;padding:10px 14px;background:#fff;border:1px solid #E8E8E8;border-radius:14px;border-top-left-radius:4px}',
+    '.ijv-typing span{width:7px;height:7px;background:var(--ijv-primary);border-radius:50%;opacity:.4;animation:ijvBlink 1.2s infinite}',
+    '.ijv-typing span:nth-child(2){animation-delay:.2s}.ijv-typing span:nth-child(3){animation-delay:.4s}',
+    '@keyframes ijvBlink{0%,80%,100%{opacity:.3;transform:translateY(0)}40%{opacity:1;transform:translateY(-3px)}}',
+    '.ijv-cta{display:flex;gap:8px;flex-wrap:wrap;margin:4px 0 6px}',
+    '.ijv-pill{background:var(--ijv-accent);color:var(--ijv-primary);border:1px solid rgba(0,0,0,.08);padding:6px 12px;border-radius:999px;font-size:12.5px;cursor:pointer;font-weight:600;transition:all .15s;font-family:inherit}',
+    '.ijv-pill:hover{background:var(--ijv-primary);color:#fff;border-color:var(--ijv-primary)}',
+    '.ijv-form{background:#fff;border:1px solid #E8E8E8;border-radius:12px;padding:14px;margin:8px 0;display:flex;flex-direction:column;gap:8px;align-self:stretch}',
+    '.ijv-form h4{margin:0 0 4px;font-size:14px;color:var(--ijv-text)}',
+    '.ijv-form input,.ijv-form textarea{width:100%;padding:9px 11px;border:1px solid #D8D8D8;border-radius:8px;font-size:13.5px;font-family:inherit;color:var(--ijv-text);background:#fff}',
+    '.ijv-form input:focus,.ijv-form textarea:focus{outline:none;border-color:var(--ijv-primary)}',
+    '.ijv-form button{background:var(--ijv-primary);color:#fff;border:0;padding:10px;border-radius:8px;font-weight:600;cursor:pointer;font-size:13.5px;font-family:inherit}',
+    '.ijv-form button:disabled{opacity:.6;cursor:wait}',
+    '.ijv-form .ijv-hp{display:none!important}',
+    '.ijv-form .ijv-legal{margin:0;font-size:10.5px;line-height:1.45;color:#8a8a8a}',
+    '.ijv-form .ijv-legal a{color:var(--ijv-primary);text-decoration:underline}',
+    '.ijv-cal{background:linear-gradient(135deg,var(--ijv-primary),var(--ijv-secondary));border-radius:12px;padding:16px;margin:8px 0;align-self:stretch;color:#fff}',
+    '.ijv-cal p{margin:0 0 10px;font-size:13.5px;line-height:1.45}',
+    '.ijv-cal a{display:inline-block;background:#fff;color:var(--ijv-primary);font-weight:700;padding:9px 16px;border-radius:8px;text-decoration:none;font-size:13.5px}',
+    '.ijv-input{display:flex;gap:8px;padding:12px;border-top:1px solid #E8E8E8;background:#fff;align-items:flex-end}',
+    '.ijv-input textarea{flex:1;border:1px solid #D8D8D8;border-radius:12px;padding:10px 12px;font-family:inherit;font-size:14px;resize:none;max-height:100px;min-height:40px;color:var(--ijv-text)}',
+    '.ijv-input textarea:focus{outline:none;border-color:var(--ijv-primary)}',
+    '.ijv-input button{background:var(--ijv-primary);color:#fff;border:0;width:40px;height:40px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0}',
+    '.ijv-input button:disabled{opacity:.5;cursor:not-allowed}',
+    '.ijv-input button svg{width:18px;height:18px;fill:#fff}',
+    '.ijv-foot{padding:8px 12px 10px;background:#fff;border-top:1px solid #E8E8E8;text-align:center;font-size:10.5px;color:#8a8a8a;line-height:1.5}',
+    '.ijv-foot a{color:var(--ijv-primary);text-decoration:none;font-weight:600}',
+    '.ijv-foot a:hover{text-decoration:underline}',
+    '.ijv-foot .ijv-foot-powered{display:block;margin-top:3px;font-size:10px;color:#9a9a9a}',
+    '.ijv-foot .ijv-foot-powered a{color:#9a9a9a;font-weight:500}',
+    '.ijv-toast{position:absolute;top:70px;left:50%;transform:translateX(-50%);background:var(--ijv-secondary);color:#fff;padding:8px 14px;border-radius:8px;font-size:12.5px;opacity:0;transition:opacity .2s;pointer-events:none}',
+    '.ijv-toast.ijv-show{opacity:.95}',
+    '@media (max-width:480px){.ijv-root{width:calc(100vw - 16px);height:calc(100vh - 90px);bottom:80px;right:8px}.ijv-launcher{bottom:16px;right:16px;height:54px;padding:0 18px}.ijv-launcher img{height:32px}}'
+  ].join('');
+
+  /* ---------------- Render de la UI ---------------- */
+  var styleEl = document.createElement('style');
+  styleEl.textContent = CSS;
+  document.head.appendChild(styleEl);
+
+  var launcher = document.createElement('button');
+  launcher.className = 'ijv-launcher';
+  launcher.setAttribute('aria-label', 'Abrir chat ' + CFG.clientName);
+  launcher.innerHTML = '<img src="' + escapeHtml(CFG.logoUrl) + '" alt="' + escapeHtml(CFG.clientName) + '" />';
+  document.body.appendChild(launcher);
+
+  var root = document.createElement('div');
+  root.className = 'ijv-root';
+  root.setAttribute('role', 'dialog');
+  root.setAttribute('aria-label', 'Chat de ' + CFG.clientName);
+  root.innerHTML =
+    '<div class="ijv-head">' +
+      '<img src="' + escapeHtml(CFG.logoUrl) + '" alt="' + escapeHtml(CFG.clientName) + '" />' +
+      '<div>' +
+        '<div class="ijv-title">' + escapeHtml(CFG.clientName) + '</div>' +
+        '<div class="ijv-sub">' + escapeHtml(CFG.agentName) + ' · ' + escapeHtml(CFG.headerSubtitle) + '</div>' +
+      '</div>' +
+      '<div class="ijv-actions">' +
+        '<button type="button" class="ijv-reset" aria-label="Reiniciar conversación" title="Nueva conversación">⟳</button>' +
+        '<button type="button" class="ijv-close" aria-label="Cerrar chat" title="Cerrar">✕</button>' +
+      '</div>' +
+      '<div class="ijv-toast">Conversación reiniciada</div>' +
+    '</div>' +
+    '<div class="ijv-msgs" aria-live="polite" aria-atomic="false"></div>' +
+    '<div class="ijv-input">' +
+      '<textarea rows="1" maxlength="2000" placeholder="Escribí tu mensaje…" aria-label="Escribí tu mensaje"></textarea>' +
+      '<button type="button" class="ijv-send" aria-label="Enviar">' +
+        '<svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>' +
+      '</button>' +
+    '</div>' +
+    '<div class="ijv-foot">' +
+      'Al usar este chat aceptás la <a href="' + escapeHtml(CFG.privacyUrl) + '" target="_blank" rel="noopener">política de privacidad</a> de ' + escapeHtml(CFG.clientName) + '.' +
+      '<span class="ijv-foot-powered"><a href="https://ijvagency.com/" target="_blank" rel="noopener">Powered by IJV</a></span>' +
+    '</div>';
+  document.body.appendChild(root);
+
+  /* Logo con fallback: si la URL del logo falla (típico en demos con dominio
+   * ficticio, o si el sitio del cliente mueve el archivo), el launcher cae a un
+   * ícono de chat y el header oculta la imagen rota — nunca se ve un img roto. */
+  var CHAT_ICON = '<svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M12 3C6.48 3 2 6.94 2 11.5c0 2.3 1.13 4.38 2.97 5.88L4 21l4.02-1.6c1.2.38 2.5.6 3.98.6 5.52 0 10-3.94 10-8.5S17.52 3 12 3z"/></svg>';
+  var lImg = launcher.querySelector('img');
+  if (lImg) {
+    var lFallback = function () { launcher.innerHTML = CHAT_ICON; };
+    lImg.onerror = lFallback;
+    if (lImg.complete && lImg.naturalWidth === 0) lFallback();
+  }
+  var hImg = root.querySelector('.ijv-head img');
+  if (hImg) {
+    var hFallback = function () { hImg.style.display = 'none'; };
+    hImg.onerror = hFallback;
+    if (hImg.complete && hImg.naturalWidth === 0) hFallback();
+  }
+
+  var $msgs  = root.querySelector('.ijv-msgs');
+  var $input = root.querySelector('textarea');
+  var $send  = root.querySelector('.ijv-send');
+  var $close = root.querySelector('.ijv-close');
+  var $reset = root.querySelector('.ijv-reset');
+  var $toast = root.querySelector('.ijv-toast');
+
+  var isOpen = false;
+  var isBusy = false;
+  var welcomed = false;
+
+  /* Regla #19: rAF obligatorio — sin él Safari/iOS deja el scroll anclado
+   * arriba mientras el bot escribe. */
+  function scrollToBottom() {
+    $msgs.scrollTop = $msgs.scrollHeight;
+    if (typeof requestAnimationFrame === 'function') {
+      requestAnimationFrame(function () { $msgs.scrollTop = $msgs.scrollHeight; });
+    }
+  }
+  function showToast(t) {
+    $toast.textContent = t;
+    $toast.classList.add('ijv-show');
+    setTimeout(function () { $toast.classList.remove('ijv-show'); }, 1800);
+  }
+  function pushUser(text, opts) {
+    var div = document.createElement('div');
+    div.className = 'ijv-msg ijv-user';
+    div.textContent = text;
+    $msgs.appendChild(div);
+    scrollToBottom();
+    if (!opts || !opts.skipSave) saveMessage('user', text);
+  }
+  function pushBot(text, opts) {
+    opts = opts || {};
+    var div = document.createElement('div');
+    div.className = 'ijv-msg ijv-bot';
+    $msgs.appendChild(div);
+    if (!opts.skipSave) saveMessage('bot', text);
+    if (CFG.typewriter && !opts.instant) {
+      typewrite(div, text);
+    } else {
+      div.innerHTML = parseMd(text);
+      scrollToBottom();
+    }
+    return div;
+  }
+  /* Typewriter: re-parsea markdown en cada step y scrollea con rAF (regla #19) */
+  function typewrite(div, fullText) {
+    var i = 0;
+    var step = Math.max(1, Math.round(CFG.typewriterCps / 30));
+    var timer = setInterval(function () {
+      i += step;
+      if (i >= fullText.length) {
+        clearInterval(timer);
+        div.innerHTML = parseMd(fullText);
+        scrollToBottom();
+        return;
+      }
+      div.innerHTML = parseMd(fullText.slice(0, i));
+      scrollToBottom();
+    }, 33);
+  }
+  function pushCTA(buttons) {
+    var row = document.createElement('div');
+    row.className = 'ijv-cta';
+    buttons.forEach(function (b) {
+      var p = document.createElement('button');
+      p.type = 'button';
+      p.className = 'ijv-pill';
+      p.textContent = b.label;
+      p.addEventListener('click', b.onClick);
+      row.appendChild(p);
+    });
+    $msgs.appendChild(row);
+    scrollToBottom();
+    return row;
+  }
+  function showTyping() {
+    var t = document.createElement('div');
+    t.className = 'ijv-typing';
+    t.innerHTML = '<span></span><span></span><span></span>';
+    $msgs.appendChild(t);
+    scrollToBottom();
+    return t;
+  }
+  function removeEl(el) { if (el && el.parentNode) el.parentNode.removeChild(el); }
+
+  /* ---------------- Call al webhook del agente ---------------- */
+  function callAgent(message, attempt) {
+    attempt = attempt || 0;
+    var ctrl = new AbortController();
+    var timer = setTimeout(function () { ctrl.abort(); }, CFG.timeoutMs);
+    return fetch(CFG.webhook, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        message: message,
+        sessionId: getSessionId(),
+        origin: window.location.origin,
+        channel: 'web'
+      }),
+      signal: ctrl.signal
+    })
+    .then(function (r) {
+      clearTimeout(timer);
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    })
+    .catch(function (err) {
+      clearTimeout(timer);
+      if (attempt < CFG.maxRetries) return callAgent(message, attempt + 1);
+      throw err;
+    });
+  }
+
+  /* ---------------- Lead form (honeypot anti-bot) ---------------- */
+  function showLeadForm(prefill) {
+    if ($msgs.querySelector('.ijv-form')) { scrollToBottom(); return; }
+    prefill = prefill || {};
+    var form = document.createElement('form');
+    form.className = 'ijv-form';
+    form.innerHTML =
+      '<h4>Dejanos tus datos y te contactamos</h4>' +
+      '<input type="text" name="nombre" placeholder="Nombre completo *" required value="' + escapeHtml(prefill.nombre || '') + '">' +
+      '<input type="email" name="email" placeholder="Correo electrónico *" required value="' + escapeHtml(prefill.email || '') + '">' +
+      '<input type="tel" name="telefono" placeholder="Teléfono / WhatsApp (opcional)" value="' + escapeHtml(prefill.telefono || '') + '">' +
+      '<textarea name="consulta" rows="2" placeholder="Contanos brevemente (opcional)"></textarea>' +
+      '<input type="text" name="hp" class="ijv-hp" tabindex="-1" autocomplete="off">' +
+      /* Línea legal del formulario: el footer del chat enlaza la política, pero el
+       * formulario es donde el usuario ENTREGA sus datos — ahí tiene que estar el
+       * enlace (regla #14, misma lógica) y el recordatorio de qué NO mandar por
+       * este medio. La segunda frase se ajusta al vertical: un prestador de salud
+       * (legal.datos_salud) pide explícitamente no enviar estudios clínicos. */
+      '<p class="ijv-legal">Al enviar aceptás el tratamiento de tus datos conforme al ' +
+        '<a href="' + escapeHtml(CFG.privacyUrl) + '" target="_blank" rel="noopener">aviso de privacidad</a>. ' +
+        'No compartas por este medio información sensible ni documentos personales.</p>' +
+      '<button type="submit">Enviar</button>';
+    $msgs.appendChild(form);
+    scrollToBottom();
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var btn = form.querySelector('button[type="submit"]');
+      btn.disabled = true;
+      btn.textContent = 'Enviando…';
+      var fd = new FormData(form);
+      fetch(CFG.leadsWebhook, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          nombre: fd.get('nombre'),
+          email: fd.get('email'),
+          telefono: fd.get('telefono'),
+          consulta: fd.get('consulta'),
+          hp: fd.get('hp'),
+          session_id: getSessionId(),
+          origin: window.location.origin
+        })
+      })
+      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r; })
+      .then(function () {
+        removeEl(form);
+        pushBot('¡Listo! Recibimos tus datos. El equipo de ' + CFG.clientName + ' te contacta muy pronto.', { instant: true });
+        afterLeadCTA();
+      })
+      .catch(function () {
+        btn.disabled = false;
+        btn.textContent = 'Reintentar';
+        pushBot('Hubo un problema al enviar. Por favor intenta de nuevo.', { instant: true });
+      });
+    });
+  }
+
+  /* Regla #20: el usuario que dejó datos está CALIENTE — no cerrar con
+   * "te escribimos pronto" seco: CTA inmediato a Calendly / WhatsApp. */
+  function afterLeadCTA() {
+
+
+  }
+
+  /* ---------------- Intent helpers ---------------- */
+
+  function wantsContactForm(text) {
+    return /\b(lead|llama(me|r)|mis datos|dejo mis datos|d[ée]jame datos|quiero que me contacten)\b/i.test(text || '');
+  }
+
+  /* ---------------- Envío de mensajes ---------------- */
+  function send(text) {
+    text = (text || '').trim();
+    if (!text || isBusy) return;
+    pushUser(text);
+    $input.value = '';
+    autoSize();
+    isBusy = true;
+    $send.disabled = true;
+
+    var typing = showTyping();
+
+    callAgent(text)
+      .then(function (data) {
+        removeEl(typing);
+        var reply = (data && (data.output || data.response || data.text)) || 'Disculpá, no pude procesar tu mensaje. ¿Podés reformularlo?';
+        pushBot(reply);
+
+        var showsForm = (data && (data.lead_intent || data.showForm)) || wantsContactForm(text);
+        var wantsContactBtn = /\b(equipo|contactar|asesor|coordinar)\b/i.test(reply);
+        var ctas = [];
+
+        /* Regla #18: botón persistente, NUNCA auto-open que tape la respuesta */
+        if (wantsContactBtn && !showsForm) {
+          ctas.push({ label: 'Contactar al equipo', onClick: function () { showLeadForm({ nombre: data && data.nombre, email: data && data.email, telefono: data && data.telefono }); } });
+        }
+        if (ctas.length) pushCTA(ctas);
+        if (showsForm) showLeadForm({ nombre: data && data.nombre, email: data && data.email, telefono: data && data.telefono });
+      })
+      .catch(function () {
+        removeEl(typing);
+        pushBot('Ups, tuve un problema de conexión. ¿Podés intentarlo de nuevo?', { instant: true });
+
+      })
+      .then(function () {
+        isBusy = false;
+        $send.disabled = false;
+        $input.focus();
+      });
+  }
+
+  /* ---------------- Auto-resize textarea ---------------- */
+  function autoSize() {
+    $input.style.height = 'auto';
+    $input.style.height = Math.min($input.scrollHeight, 100) + 'px';
+  }
+  $input.addEventListener('input', autoSize);
+  $input.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      send($input.value);
+    }
+  });
+  $send.addEventListener('click', function () { send($input.value); });
+
+  /* ---------------- Welcome + quick buttons ---------------- */
+  function showWelcome() {
+    /* El welcome NO pasa por send(): jamás dispara detección de lead (regla #18) */
+    pushBot(CFG.welcomeMessage, { instant: true, skipSave: true });
+    if (QUICK_BUTTONS.length) {
+      pushCTA(QUICK_BUTTONS.map(function (b) {
+        return { label: b.label, onClick: function () { send(b.mensaje); } };
+      }));
+    }
+  }
+  function restoreHistory() {
+    var hist = loadMessages();
+    if (!hist.length) return false;
+    hist.forEach(function (m) {
+      if (m.role === 'user') pushUser(m.text, { skipSave: true });
+      else pushBot(m.text, { instant: true, skipSave: true });
+    });
+    return true;
+  }
+
+  /* ---------------- Open / close / reset ---------------- */
+  function openChat() {
+    isOpen = true;
+    root.classList.add('ijv-open');
+    launcher.style.display = 'none';
+    if (!welcomed) {
+      welcomed = true;
+      getSessionId(); /* aplica TTL antes de restaurar */
+      if (!restoreHistory()) showWelcome();
+    }
+    setTimeout(function () { $input.focus(); }, 200);
+  }
+  function closeChat() {
+    isOpen = false;
+    root.classList.remove('ijv-open');
+    launcher.style.display = 'flex';
+  }
+  launcher.addEventListener('click', openChat);
+  $close.addEventListener('click', closeChat);
+  $reset.addEventListener('click', function () {
+    resetSession();
+    $msgs.innerHTML = '';
+    showToast('Conversación reiniciada');
+    setTimeout(showWelcome, 250);
+  });
+
+  /* ---------------- API pública opcional ---------------- */
+  window.medicinaesteticaAgent = {
+    open:  openChat,
+    close: closeChat,
+    reset: function () { $reset.click(); },
+    send:  send
+  };
+})();
+
+  </script>
+</body>
+
+</html>
